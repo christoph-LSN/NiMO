@@ -21,8 +21,8 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Niedersachsen Monitor"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+subtitle                 : Zahlen, Daten, Fakten. Niedersachsen im Spiegel der amtlichen Statistik
+name                     : "Robostat"
 description              : "Zahlen, Daten, Fakten. Niedersachsen im Spiegel der amtlichen Statistik"
 url                      : https://christoph-lsn.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : NiMO/ # the subpath of your site, e.g. "/blog"
