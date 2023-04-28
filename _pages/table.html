@@ -1,0 +1,17 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.8/xlsx.full.min.js"></script>
+<script>
+  var url = "https://github.com/christoph-LSN/NiMO/raw/development/_data/test.xlsx";
+  var req = new XMLHttpRequest();
+  req.open("GET", url, true);
+  req.responseType = "arraybuffer";
+  req.onload = function(e) {
+    var data = new Uint8Array(req.response);
+    var workbook = XLSX.read(data, {type:"array"});
+    var first_sheet_name = workbook.SheetNames[0];
+    var worksheet = workbook.Sheets[first_sheet_name];
+    var html = XLSX.utils.sheet_to_html(worksheet);
+    document.getElementById("excel-container").innerHTML = html;
+  }
+  req.send();
+</script>
+<div id="excel-container"></div>
