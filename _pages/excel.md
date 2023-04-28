@@ -1,5 +1,5 @@
 ---
 title: Excel Datei
-permalink: /excel/
+permalink: /table.html
 layout: page
 ---
